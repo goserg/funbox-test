@@ -62,6 +62,7 @@ body {
   font-family: 'Trebuchet MS', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
   min-height: 100vh;
   background-image: url("./assets/Pattern_single.png");
   .shadow {
