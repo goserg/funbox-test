@@ -58,7 +58,7 @@
       </p>
       <img
         class="card__pic"
-        src="../assets/cat.png"
+        src="../assets/cat_compressed.png"
         alt="cat picture"
         :style="disabled && 'opacity: 0.5;'"
       >
