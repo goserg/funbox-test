@@ -197,6 +197,8 @@ export default {
   }
   &__pic {
     position: absolute;
+    width: 368px;
+    height: 360px;
     left: -24px;
     top: 208px;
     z-index: 1;
@@ -207,22 +209,25 @@ export default {
     height: 80px;
     border-radius: 40px;
     z-index: 2;
-    right: 10px;
-    bottom: 10px;
-    &__weight,
-    &__kg {
+    right: 15px;
+    bottom: 15px;
+    &__weight {
       display: block;
       font-size: 42px;
       font-weight: 400;
-      line-height: 30px;
-      margin: 15px auto 0 auto;
+      line-height: 42px;
+      margin: 10px auto 0 auto;
       color: white;
       text-align: center;
     }
     &__kg {
-      width: max-content;
-      margin: 0 auto;
+      display: block;
       font-size: 22px;
+      font-weight: 400;
+      line-height: 22px;
+      margin: 0 auto;
+      color: white;
+      text-align: center;
     }
   }
 }
