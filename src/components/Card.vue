@@ -38,14 +38,23 @@
         {{ this.product.name }}
       </h3>
       <p
-        class="card__gift"
+        class="card__text"
         :style="disabled && 'opacity: 0.5;'"
       >
-        {{ this.product.portions }} порций<br>
-        {{ this.product.gift }} в подарок<br>
-        <span v-if="product.customerIsHappy">
-          Зачазик доволен
-        </span>
+        {{ this.product.portions }} порций
+      </p>
+      <p
+        class="card__text"
+        :style="disabled && 'opacity: 0.5;'"
+      >
+        {{ this.product.gift }} в подарок
+      </p>
+      <p
+        v-if="product.customerIsHappy"
+        class="card__text"
+        :style="disabled && 'opacity: 0.5;'"
+      >
+        Зачазик доволен
       </p>
       <img
         class="card__pic"
@@ -145,6 +154,9 @@ export default {
   padding: 20px 50px;
   margin: 0 40px;
   overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   svg {
     position: absolute;
@@ -174,9 +186,10 @@ export default {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-    margin: 0;
+    margin: 0 0 15px 0;
   }
-  &__gift {
+  &__text {
+    margin: 0;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
